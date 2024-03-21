@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures with Barbie</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Whisper&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="index.js"defer></script>
+</head>
+<body>
+    <header>
+        <div class="video-container">
+          <video autoplay muted loop id="bannerVideo">
+            <source src="Multimedia\welcome banner.mp4" type="video/mp4">
+          </video>
+          
+       </div>
+    </header>
+
+
+    <main>
+      <section class="about-me">
+        <h1>Welcome to Adventures with Barbie!</h1>
+        <p>Hi there! I'm Barbie, and I'm thrilled to welcome you to my personal blog. Here, I'll be sharing my adventures and insights in the realms of Entertainment, Food, Travel, Beauty, and Skincare. Join me as we explore the latest trends, uncover hidden gems, and indulge in the finer things life has to offer. Get ready for an exciting journey filled with discoveries and inspirations!</p>
+    </section>
+    
+        <section>
+          <div class="card-container">
+            <div class="card" id="entertainment">
+                <h2>Entertainment</h2>
+                <p>Concerts, nightlife </p>
+            </div>
+            <div class="card" id="food">
+                <h2>Food</h2>
+                <p>Best places to 'Wine and Dine'</p>
+            </div>
+            <div class="card" id="travel">
+                <h2>Travel</h2>
+                <p>Explore within and beyond borders</p>
+            </div>
+            <div class="card" id="beauty">
+                <h2>Beauty & Skincare</h2>
+                <p>Makeup reviews and skincare practices </p>
+            </div>
+            <div class="card" id="health">
+                <h2>Health & Wellness</h2>
+                <p>Deep dive into taking care of ourselves</p>
+            </div>
+            <div class="card" id="fashion">
+                <h2>Fashion & Design</h2>
+                <p>Latest trends</p>
+            </div>
+        </div>
+        
+        </section> 
+
+        <section class="latest-blogs">
+          <h2 class="section-title">Latest Blogs</h2>
+
+          <div class="blog-card" onsubmit="handleSubmit(event)">
+            <img src="Multimedia\Campaign.jpeg" alt="Blog Photo" class="blog-photo">
+            <div class="blog-content">
+              <h3 class="blog-title">Pro-Palestine Campaign</h3>
+              <p class="blog-subtitle">I was honoured to attend a Palestinian Campain organized by kenyan human rights activitists. Its main aim was to raise awareness on the ongoing genocide and show solidarity.</p>
+            </div>
+            <div class="comment-section">
+              <h4>Leave a comment</h4>
+              <textarea id="comment" rows="2" cols="30"></textarea>
+            </div>
+            
+            <!-- Radio buttons for rating the post -->
+            <div class="rating-section">
+              <h4>Rate post</h4>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+            </div>
+            
+            <!-- Submit button -->
+            <button class="submit-button">Submit</button>
+          </div>
+        </div>
+          </div>
+
+          <div class="blog-card" onsubmit="handleSubmit(event)">
+            <img src="Multimedia\flora.jpeg" alt="Blog Photo" class="blog-photo">
+            <div class="blog-content">
+              <h3 class="blog-title">Flora by Endo</h3>
+              <p class="blog-subtitle">Today's flower post is inspired by 'Flora by Endo'. The shop curates amazing flower bouquets and they are available for sale on their website. I'll definitely be getting more!</p>
+            </div>
+            <div class="comment-section">
+              <h4>Leave a comment</h4>
+              <textarea id="comment" rows="2" cols="30"></textarea>
+            </div>
+            
+            <!-- Radio buttons for rating the post -->
+            <div class="rating-section">
+              <h4>Rate post</h4>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+            </div>
+            
+            <!-- Submit button -->
+            <button class="submit-button">Submit</button>
+          </div>
+        </div>
+          </div>
+
+          <div class="blog-card" onsubmit="handleSubmit(event)">
+            <img src="Multimedia\Pablo's Mexobar.jpeg" alt="Blog Photo" class="blog-photo">
+            <div class="blog-content">
+              <h3 class="blog-title">Pablo's Mexobar Restaurant</h3>
+              <p class="blog-subtitle">This is the only Tex-Mex Restaurant (Americanized version of Mexican food) located at Broadwalk Mall, Westlands. Their food is absolutely amaizing and the cocktails too. I definitely recommend!</p>
+            </div>
+            <div class="comment-section">
+              <h4>Leave a comment</h4>
+              <textarea id="comment" rows="2" cols="30"></textarea>
+            </div>
+            
+            <!-- Radio buttons for rating the post -->
+            <div class="rating-section">
+              <h4>Rate post</h4>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+              <label><input type="radio" name="rating"></label>
+            </div>
+            
+            <!-- Submit button -->
+            <button class="submit-button">Submit</button>
+          </div>
+        </div>
+          </div>
+
+          
+        <section>
+          
+          <section class="newscard">
+            <form id="newsletter-form" onsubmit="handleSubmit(event)">
+                <h2 class="form-title">Subscribe to Newsletter</h2>
+              
+                <div class="form-group">
+                  <label for="name">Enter Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+              
+                <div class="form-group">
+                  <label for="email">Enter Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              
+                <div class="form-group">
+                  <span>Category:</span>
+                  <label for="daily"><input type="radio" id="daily" name="category" value="daily"> Daily</label>
+                  <label for="weekly"><input type="radio" id="weekly" name="category" value="weekly"> Weekly</label>
+                  <label for="monthly"><input type="radio" id="monthly" name="category" value="monthly"> Monthly</label>
+                </div>
+              
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+          
+            <div id="subscribe-message"></div>
+        </section>
+
+        
+    </main>
+<section>
+   <footer class="footer">
+    <div class="icon-group">
+        <i class="fab fa-instagram fa-3x"></i>
+        <span>Instagram</span>
+    </div>
+    <div class="icon-group">
+        <i class="fab fa-twitter fa-3x"></i>
+        <span>Twitter</span>
+    </div>
+    <div class="icon-group">
+        <i class="fab fa-facebook fa-3x"></i>
+        <span>Facebook</span>
+    </div>
+    <div class="icon-group">
+        <i class="far fa-envelope fa-3x"></i>
+        <span>Email</span>
+    </div>
+    <p> Copyright &copy; 2024  All rights reserved by: Adventures by Barbie</p>
+</footer>
+
+</section>
+    
+</body>
+</html>
